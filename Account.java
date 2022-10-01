@@ -1,39 +1,52 @@
 package p3;
 
-
-
 public class Account {
+	
 	private long accountNumber;
-	private String username;
-	private String password;
-	private int balance;
-	private KycVerification kycdetails;
-	private ContactDetails contactDetails;
+	private String userName;
+	private	String password;
+	private	int balance;
+	private	int cashback;
+	
+	private ContactDetails cd;
+	private KYCverification kyc;
+	
+	private	int deposit(int amount) {
+		return 0;
+	}
+	private	int withdrawl(int amount) {
+		return 0;
+	}
+	
+	public Account(long accountNumber, String userName, String password, int balance, int cashback, ContactDetails cd,
+			KYCverification kyc) {
+		super();
+		this.accountNumber = accountNumber;
+		this.userName = userName;
+		this.password = password;
+		this.balance = balance;
+		this.cashback = cashback;
+		this.cd = cd;
+		this.kyc = kyc;
+	}
 	public Account() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Account(long accountNumber, String username, String password, int balance, KycVerification kycdetails,
-			ContactDetails contactDetails) {
-		super();
-		this.accountNumber = accountNumber;
-		this.username = username;
-		this.password = password;
-		this.balance = balance;
-		this.kycdetails = kycdetails;
-		this.contactDetails = contactDetails;
-	}
+
+	
+
 	public long getAccountNumber() {
 		return accountNumber;
 	}
 	public void setAccountNumber(long accountNumber) {
 		this.accountNumber = accountNumber;
 	}
-	public String getUsername() {
-		return username;
+	public String getUserName() {
+		return userName;
 	}
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	public String getPassword() {
 		return password;
@@ -47,55 +60,40 @@ public class Account {
 	public void setBalance(int balance) {
 		this.balance = balance;
 	}
-	public KycVerification getKycdetails() {
-		return kycdetails;
+	public int getCashback() {
+		return cashback;
 	}
-	public void setKycdetails(KycVerification kycdetails) {
-		this.kycdetails = kycdetails;
+	public void setCashback(int cashback) {
+		this.cashback = cashback;
 	}
-	public ContactDetails getContactDetails() {
-		return contactDetails;
+	public ContactDetails getCd() {
+		return cd;
 	}
-	public void setContactDetails(ContactDetails contactDetails) {
-		this.contactDetails = contactDetails;
+	public void setCd(ContactDetails cd) {
+		this.cd = cd;
 	}
-	@Override
-	public String toString() {
-		return "Account [accountNumber=" + accountNumber + ", username=" + username + ", password=" + password
-				+ ", balance=" + balance + ", kycdetails=" + kycdetails + ", contactDetails=" + contactDetails + "]";
+	public KYCverification getKyc() {
+		return kyc;
+	}
+	public void setKyc(KYCverification kyc) {
+		this.kyc = kyc;
+	}
 	
-	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 }
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	
-	
-	
-	
-	
-	
-	
+
+
+
